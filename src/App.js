@@ -1,7 +1,6 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import OneButton from "./OneButton";
+import TwoButton from "./TwoButton";
 
 function App() {
   return (
@@ -60,11 +59,11 @@ function App() {
           </OneButton>
           <OneButton>
             {/* prettier-ignore */}
-            <div className="mt-15"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="#7b67f2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14"/></svg></div>
+            <div className="mt-15"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="#7b67f2" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14"/></svg></div>
           </OneButton>
         </div>
         <div className="row w-100 d-flex justify-content-evenly mx-0 mt-3">
-          <OneButton>
+          <OneButton className="col-3">
             {/* prettier-ignore */}
             <div className="mt-15"><svg xmlns="http://www.w3.org/2000/svg" width="0.5em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 512"><path fill="#728ab7" d="M256 448c0 17.67-14.33 32-32 32H32c-17.67 0-32-14.33-32-32s14.33-32 32-32h64V123.8l-46.25 30.8c-14.73 9.9-34.56 5.8-44.375-8.8c-9.797-14.7-5.828-34.6 8.875-44.4l96-64c9.828-6.547 22.45-7.187 32.84-1.594A31.992 31.992 0 0 1 160 64.01v352h64c17.7-.01 32 14.29 32 31.99z"/></svg></div>
           </OneButton>
@@ -78,12 +77,13 @@ function App() {
           </OneButton>
           <OneButton>
             {/* prettier-ignore */}
-            <div className="mt-15"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="#7b67f2" stroke-linecap="round" stroke-width="2" d="M12 20v-8m0 0V4m0 8h8m-8 0H4"/></svg></div>
+            <div className="mt-15"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="#7b67f2" strokeLinecap="round" strokeWidth="2" d="M12 20v-8m0 0V4m0 8h8m-8 0H4"/></svg></div>
           </OneButton>
         </div>
-        <div className="row w-100 d-flex justify-content-end mr-5 mt-3">
-          <OneButton></OneButton>
-          <OneButton></OneButton>
+        <div className="row w-100 d-flex justify-content-between m-0 mt-3">
+          <TwoButton></TwoButton>
+          <OneButton className="dot"></OneButton>
+          <OneButton className="equal"></OneButton>
         </div>
       </div>
     </div>
